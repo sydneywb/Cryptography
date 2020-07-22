@@ -1,3 +1,4 @@
+# This code takes a plain text message and encodes it using a caesar cipher with a shift of your choice.
 print("Make your own Caesar Cipher!")
 message = input("Message to encrypt: ").lower()
 shift = input("Shift: ")
