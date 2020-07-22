@@ -1,4 +1,4 @@
-# This code takes an encoded message and provides all possibilities for a shift (1-26). Find the one that is in plain english.
+# This code decodes a caesar cipher. It takes an encoded message and provides all possibilities for the shift (1-26). Find the one that is in plain english.
 print("Decode a Caesar Cipher!")
 message = input("Message to encrypt: ").lower()
 alpha = "abcdefghijklmnopqrstuvwxyz"
