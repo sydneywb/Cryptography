@@ -1,0 +1,12 @@
+# This code takes an encoded message and provides all possibilities for a shift (1-26). Find the one that is in plain english.
+print("Decode a Caesar Cipher!")
+message = input("Message to encrypt: ").lower()
+alpha = "abcdefghijklmnopqrstuvwxyz"
+print("Encrypted Message: ", end = "")
+for shift in range(1,25):
+    for i in message:
+        newindex = alpha.index(i) + int(shift)
+        if newindex > 25:
+            newindex = newindex - 26
+        print(alpha[newindex],end="")
+    print(" Shift:",shift,"\n")
