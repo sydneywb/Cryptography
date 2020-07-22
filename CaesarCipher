@@ -1,0 +1,10 @@
+print("Make your own Caesar Cipher!")
+message = input("Message to encrypt: ").lower()
+shift = input("Shift: ")
+alpha = "abcdefghijklmnopqrstuvwxyz"
+print("Encrypted Message: ", end = "")
+for i in message:
+    newindex = alpha.index(i) + int(shift)
+    if newindex > 25:
+        newindex = newindex - 26
+    print(alpha[newindex],end="")
